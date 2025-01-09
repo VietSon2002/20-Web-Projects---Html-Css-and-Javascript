@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sending Emails</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="building__img"></div>
+        <form action="https://formspree.io/f/myzzbver" method="post">
+            <span>
+                <input name="fullname" type="text" placeholder="Full Name" required />
+                <i class="fa-regular fa-user"></i>
+            </span>
+
+            <span>
+                <input name="email" type="email" placeholder="E.g. example@gmail.com" required />
+                <i class="fa-regular fa-envelope"></i>
+            </span>
+
+            <span>
+                <input name="phone" type="text" placeholder="Phone" required />
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </span>
+
+            <span>
+                <textarea name="message" placeholder="Your Message" rows="10" cols="3" required id=""></textarea>
+                <i class="fa-regular fa-comment" style="top: 6.5%;"></i>
+            </span>
+
+            <button class="send__button">SEND NOW</button>
+
+        </form>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+
+</html>

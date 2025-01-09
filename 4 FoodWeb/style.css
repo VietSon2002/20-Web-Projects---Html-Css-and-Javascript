@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1 rem = 16px la mac dinh*/
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body {
+    font-family: "Amatic SC";
+    height: 100vh;
+    background-color: #ebc84a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    letter-spacing: 1.25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.4rem;
+}
+
+.p1 {
+    position: absolute;
+    transform: translateX(-90%);
+    width: 300px;
+    height: 300px;
+}
+
+.p2 {
+    position: absolute;
+    transform: translateX(80%);
+    width: 180px;
+    height: 300px;
+}
+
+.p3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+.p4 {
+    position: absolute;
+    bottom: -3%;
+    right: -1%;
+    width: 300px;
+    height: 300px;
+}
+
+.p4 {
+    position: absolute;
+    bottom: -3%;
+    right: -1%;
+    width: 300px;
+    height: 300px;
+}
+
+.p5 {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    width: 300px;
+    height: 300px;
+}
+
+.corn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4%;
+    top: 15%;
+    background-color: #ffba08;
+    filter: blur(3px);
+}
+
+.discover-circle {
+    position: absolute;
+    height: 100px;
+    top: 85%;
+    width: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    font-size: 2.4rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    position: absolute;
+    transform: translate(56rem, -15rem);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+    padding-top: 2.4rem;
+}
+
+nav button {
+    width: 50%;
+    height: 4.5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+nav div,
+h1 {
+    flex-basis: 35rem;
+}
+
+h2 {
+    font-size: 25rem;
+    text-align: center;
+    width: 50rem;
+}
+
+.links {
+    display: flex;
+    column-gap: 3.2rem;
+}
+
+.links a {
+    font-size: 2.6rem;
+    text-decoration: none;
+    color: black;
+}
