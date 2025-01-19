@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 0.75px;
+}
+
+.shoes-card {
+    width: 400px;
+    height: 500px;
+    background-color: #1b1b1b;
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 50%;
+    background-color: #dc2b2f;
+    clip-path: polygon(0 100%, 100% 0%, 0 0, 0 100%);
+}
+
+.ctn {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h1,
+span {
+    color: #c0c0c0;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.color-ctn,
+.size-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.circle {
+    cursor: pointer;
+    background-color: #c0c0c0;
+    color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    flex-basis: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle--1 {
+    background-color: #dc2b2f;
+}
+
+.circle--2 {
+    background-color: #abdb3a;
+}
+
+.circle--3 {
+    background-color: #2596bc;
+}
+
+.shoe {
+    position: absolute;
+    top: 5%;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.buy-button {
+    border: none;
+    padding: 8px;
+    font-size: 26px;
+    cursor: pointer;
+    background-color: #eee;
+    width: 100%;
+    transition: background-color 0.3s ease-in;
+}
+
+.buy-button:hover {
+    background-color: #03c03c;
+}
+
+.water-animation {
+    position: absolute;
+    background: #03c03c;
+    width: 1500px;
+    height: 1500px;
+    transform: translate(-50%, -50%);
+    z-index: 55;
+    border-radius: 100px;
+    bottom: 0;
+    left: 50%;
+
+}
+
+@keyframes waterAnm {
+    0% {
+        transform: translate(-50%, 100%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, 10%) rotate(360deg);
+    }
+}
+
+.bought-animation {
+    animation: waterAnm 5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    z-index: 100;
+    color: #03c03c;
+    width: 110px;
+    height: 110px;
+    background-color: #1b1b1b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.show-checkmark {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.choosed {
+    outline: 1px solid #c0c0c0;
+    outline-offset: 3px;
+}
