@@ -62,7 +62,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background: linear-gradient(#000000ab, #000000ab);
@@ -151,5 +151,9 @@ body {
 }
 
 .zoom-out {
-    animation: zoom-in 0.5s ease-in-out;
+    animation: zoom-out 0.5s ease-in-out;
+}
+
+.show{
+    display: flex;
 }
